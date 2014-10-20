@@ -19,7 +19,6 @@ angular.module('ionicApp', ['ionic'])
       return pets;
     },
     get: function (petId) {
-
       return pets[petId];
     }
   };

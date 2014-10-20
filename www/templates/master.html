@@ -10,14 +10,13 @@
 	</ion-nav-buttons> 
 	<ion-content>
 	<div class="list">
-		<a class="item my-item item-thumbnail-left"
+		<a class="row item"
 			collection-repeat="pet in pets | filter:filter"
-			collection-item-height="90"
-			collection-item-width="'200%'"
-			ui-sref="tabs.detail({petsId: pet.id })"> <img
-			ng-src="http://placekitten.com/60/{{55 + ($index % 10)}}">
-			<h2>{{pet.firstName}}</h2>
-			<p>{{pet.id}}</p>
+			collection-item-height="100" collection-item-width="'100%'"
+			ui-sref="tabs.detail({petsId: pet.id })"> 
+			<div class="col"><img ng-src="http://placekitten.com/60/{{55 + ($index % 10)}}"></div>
+			<div class="col">{{pet.firstName}}<br></div>
+			<div class="col"><h2>{{pet.id}}</h2></div>
 		</a>
 	</div>
 	</ion-content> 
